@@ -115,7 +115,9 @@ template <class Record>
 Error_code AVL_tree<Record>::avl_delete(Binary_node<Record>* &sub_root,
 	const Record &old_data, bool &shorter)
 {
+	Error_code result = success;
 
+	return result;
 }
 
 

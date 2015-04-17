@@ -10,6 +10,7 @@ int main(){
 	string input = "";
 	bool exit_now = false;
 	AVL_tree<int> atree;
+
 	while (!exit_now){
 		cout << endl;
 		cout << "***********************" << endl;
@@ -18,6 +19,7 @@ int main(){
 		cout << "2. Insert from File" << endl;
 		cout << "3. Incremental Delete" << endl;
 		cout << "4. Delete from File" << endl;
+		cout << "5. Search" << endl;
 		cout << "p. Print tree" << endl;
 		cout << "x. Exit" << endl;
 		cout << "***********************" << endl;
@@ -75,6 +77,11 @@ int main(){
 			}
 			else
 				cout << "Invalid file name." << endl;
+		}
+		else if (input == "5"){
+			cout << endl << "Enter a key to search." << endl << endl;
+			getline(cin, input);
+			cout << "Need to implement" << endl;
 		}
 		else if (input == "p")
 			atree.print();
