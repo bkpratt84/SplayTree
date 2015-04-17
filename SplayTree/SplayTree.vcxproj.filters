@@ -33,6 +33,12 @@
     <ClInclude Include="AVL_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SplayTree_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SplayTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

@@ -16,6 +16,8 @@
     <ClInclude Include="Binary_node.h" />
     <ClInclude Include="Binary_tree.h" />
     <ClInclude Include="Search_tree.h" />
+    <ClInclude Include="SplayTree.h" />
+    <ClInclude Include="SplayTree_node.h" />
     <ClInclude Include="utility.h" />
   </ItemGroup>
   <ItemGroup>

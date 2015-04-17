@@ -5,7 +5,7 @@
 
 using namespace std;
 
-enum Error_code { duplicate_error, not_present, success };
+enum Error_code { duplicate_error, not_present, success, failed};
 
 int string_to_int(string s){
 	istringstream instr(s);

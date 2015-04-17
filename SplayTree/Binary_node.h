@@ -11,8 +11,9 @@ struct Binary_node{
 	Binary_node(const Entry &x);
 
 	// virtual methods:
-	virtual void set_balance(Balance_factor b);
-	virtual Balance_factor get_balance() const;
+	//virtual void set_balance(Balance_factor b);
+	//virtual Balance_factor get_balance() const;
+	//Shouldnt be needed for Splay tree
 };
 
 template <class Entry>
@@ -29,11 +30,11 @@ Binary_node<Entry>::Binary_node(const Entry &x){
 }
 
 // Dummy functions
-template <class Entry>
-void Binary_node<Entry>::set_balance(Balance_factor b){
-}
-
-template <class Entry>
-Balance_factor Binary_node<Entry>::get_balance() const {
-	return equal_height;
-}
+//template <class Entry>
+//void Binary_node<Entry>::set_balance(Balance_factor b){
+//}
+//
+//template <class Entry>
+//Balance_factor Binary_node<Entry>::get_balance() const {
+//	return equal_height;
+//}

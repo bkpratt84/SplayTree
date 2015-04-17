@@ -2,14 +2,14 @@
 #include "Binary_node.h"
 #include "Binary_tree.h"
 #include "Search_tree.h"
-#include "AVL_node.h"
-#include "AVL_tree.h"
+#include "SplayTree_node.h"
+#include "SplayTree.h"
 
 
 int main(){
 	string input = "";
 	bool exit_now = false;
-	AVL_tree<int> atree;
+	SplayTree<int> st;
 
 	while (!exit_now){
 		cout << endl;
@@ -32,8 +32,8 @@ int main(){
 			cout << endl;
 			getline(cin, input);
 			while (input != "q"){
-				atree.insert(string_to_int(input));
-				atree.print();
+				st.insert(string_to_int(input));
+				st.print();
 				getline(cin, input);
 			}
 		}
@@ -45,9 +45,9 @@ int main(){
 			if (!insertion_file.fail()){
 				while (!insertion_file.fail() && !insertion_file.eof()){
 					getline(insertion_file, input);
-					atree.insert(string_to_int(input));
+					st.insert(string_to_int(input));
 				}
-				atree.print();
+				st.print();
 			}
 			else
 				cout << "Invalid file name." << endl;
@@ -58,8 +58,8 @@ int main(){
 			cout << endl;
 			getline(cin, input);
 			while (input != "q"){
-				atree.remove(string_to_int(input));
-				atree.print();
+				st.remove(string_to_int(input));
+				st.print();
 				getline(cin, input);
 			}
 		}
@@ -71,9 +71,9 @@ int main(){
 			if (!deletion_file.fail()){
 				while (!deletion_file.fail() && !deletion_file.eof()){
 					getline(deletion_file, input);
-					atree.remove(string_to_int(input));
+					st.remove(string_to_int(input));
 				}
-				atree.print();
+				st.print();
 			}
 			else
 				cout << "Invalid file name." << endl;
@@ -84,7 +84,7 @@ int main(){
 			cout << "Need to implement" << endl;
 		}
 		else if (input == "p")
-			atree.print();
+			st.print();
 		else if (input == "x")
 			exit_now = true;
 	}
