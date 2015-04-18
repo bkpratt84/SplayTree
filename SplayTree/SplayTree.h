@@ -17,7 +17,25 @@ protected:
 };
 
 template <class Record>
-Error_code ST_insert(Binary_node<Record>* &sub_root, const Record &new_data)
+Error_code SplayTree<Record>::insert(const Record &new_data)
+{
+	return ST_insert(this->root, new_data);
+}
+
+template <class Record>
+Error_code SplayTree<Record>::remove(const Record &old_data)
+{
+	return ST_delete(this->root, old_data);
+}
+
+template <class Record>
+Error_code SplayTree<Record>::search(const Record &data)
+{
+	return ST_search(this->root, data);
+}
+
+template <class Record>
+Error_code SplayTree<Record>::ST_insert(Binary_node<Record>* &sub_root, const Record &new_data)
 {
 	Error_code result = success;
 
@@ -25,7 +43,7 @@ Error_code ST_insert(Binary_node<Record>* &sub_root, const Record &new_data)
 }
 
 template <class Record>
-Error_code ST_delete(Binary_node<Record>* &sub_root, const Record &old_data)
+Error_code SplayTree<Record>::ST_delete(Binary_node<Record>* &sub_root, const Record &old_data)
 {
 	Error_code result = success;
 
@@ -33,7 +51,7 @@ Error_code ST_delete(Binary_node<Record>* &sub_root, const Record &old_data)
 }
 
 template <class Record>
-Error_code ST_search(Binary_node<Record>* &sub_root, const Record &data)
+Error_code SplayTree<Record>::ST_search(Binary_node<Record>* &sub_root, const Record &data)
 {
 	Error_code result = success;
 
@@ -41,7 +59,7 @@ Error_code ST_search(Binary_node<Record>* &sub_root, const Record &data)
 }
 
 template <class Record>
-Error_code ST_splay(Binary_node<Record>* &sub_root, const Record &data)
+Error_code SplayTree<Record>::ST_splay(Binary_node<Record>* &sub_root, const Record &data)
 {
 	Error_code result = success;
 
