@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AVL_node.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Binary_node.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -28,9 +25,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="utility.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AVL_tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SplayTree_node.h">

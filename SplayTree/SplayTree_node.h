@@ -5,11 +5,11 @@ struct SplayTree_node : public Binary_node<Record> {
 };
 
 template <class Record>
-SplayTree_node<Record>::SplayTree_node() :Binary_node<Record>(){
+SplayTree_node<Record>::SplayTree_node() : Binary_node<Record>(){
 
 }
 
 template <class Record>
-SplayTree_node<Record>::SplayTree_node(const Record &x) :Binary_node<Record>(x){
+SplayTree_node<Record>::SplayTree_node(const Record &x) : Binary_node<Record>(x){
 	
 }

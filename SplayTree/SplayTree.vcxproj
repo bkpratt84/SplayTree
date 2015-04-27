@@ -11,8 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AVL_node.h" />
-    <ClInclude Include="AVL_tree.h" />
     <ClInclude Include="Binary_node.h" />
     <ClInclude Include="Binary_tree.h" />
     <ClInclude Include="Search_tree.h" />

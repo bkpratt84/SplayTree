@@ -19,7 +19,7 @@ int main(){
 		cout << "2. Insert from File" << endl;
 		cout << "3. Incremental Delete" << endl;
 		cout << "4. Delete from File" << endl;
-		cout << "5. Search" << endl;
+		cout << "5. Incremental Search" << endl;
 		cout << "p. Print tree" << endl;
 		cout << "x. Exit" << endl;
 		cout << "***********************" << endl;
@@ -78,10 +78,17 @@ int main(){
 			else
 				cout << "Invalid file name." << endl;
 		}
-		else if (input == "5"){
-			cout << endl << "Enter a key to search." << endl << endl;
+		else if (input == "5") {
+			cout << endl;
+			cout << "Enter integer keys to search.  Enter \"q<Enter>\" to quit." << endl;
+			cout << endl;
+
 			getline(cin, input);
-			cout << "Need to implement" << endl;
+			while (input != "q") {
+				st.search(string_to_int(input));
+				st.print();
+				getline(cin, input);
+			}
 		}
 		else if (input == "p")
 			st.print();
